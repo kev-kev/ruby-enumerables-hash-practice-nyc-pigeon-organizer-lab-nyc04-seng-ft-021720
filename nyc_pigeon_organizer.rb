@@ -27,6 +27,6 @@ def nyc_pigeon_organizer(data)
       }
     }
   }
-  pigeon_names 
+  pp pigeon_names 
 end
 
