@@ -21,7 +21,7 @@ def nyc_pigeon_organizer(data)
   pigeon_names.each{ |birdname, attributes_hash|
     attributes_hash.each { |attribute, arr|
       data[attribute].each { |variant, name_arr|
-        variant.to_s
+        variant = variant.to_s
         if name_arr.include?(birdname)
           pigeon_names[birdname][attribute].push(variant)
         end
