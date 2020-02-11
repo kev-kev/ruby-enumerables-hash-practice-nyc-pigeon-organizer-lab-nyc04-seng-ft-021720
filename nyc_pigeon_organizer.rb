@@ -15,15 +15,14 @@ def nyc_pigeon_organizer(data)
       name_arr.each { |name|
         pigeon_names[name] = {color: [], gender: [], lives: []}
       }
-      
     }
   }
   
   pigeon_names.each{ |birdname, attributes_hash|
     attributes_hash.each { |attribute, arr|
       data[attribute].each { |variant, name_arr|
-        if name_arr.include?(name)
-          pigeon_names[name][attribute] = variant
+        if name_arr.include?(birdname)
+          pigeon_names[birdname][attribute] = variant
         end
       }
     }
